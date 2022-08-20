@@ -5,6 +5,11 @@ let continuePlaying = false;
 
 let grid = [];
 
+window.addEventListener('contextmenu', function (e) { 
+  // do something here... 
+  e.preventDefault(); 
+}, false);
+
 function setup() {
     frameRate(15);
     createCanvas(width, height);
